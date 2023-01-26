@@ -5,9 +5,9 @@ import MenuItem from "../MenuItem";
 import ItemsList from "../data";
 import "./index.css";
 
-const ItemsMenu = () => {
-  {
-    /*
+const ItemsMenu = () => (
+  <>
+    {/*
   const [isLoading, setIsLoading] = useState(true);
   const [MenuList, setMenuList] = useState([]);
 
@@ -22,20 +22,17 @@ const ItemsMenu = () => {
   useEffect(() => {
     getMenuList();
   }, []);
-*/
-  }
+*/}
 
-  return (
-    <>
-      <Navbar />
+    <Navbar />
 
-      <div className=" explore-menu-section pt-5 pb-5" id="exploreMenuSection">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <h1 className="menu-section-heading">Explore Menu</h1>
-            </div>
-            {/*{isLoading ? (
+    <div className=" explore-menu-section pt-5 pb-5" id="exploreMenuSection">
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <h1 className="menu-section-heading">Explore Menu</h1>
+          </div>
+          {/*{isLoading ? (
               <ThreeDots
                 height="80"
                 width="80"
@@ -51,16 +48,13 @@ const ItemsMenu = () => {
                 <MenuItem key={eachItem.id} Item={eachItem} />
               ))
               )} */}
-            {
-              ItemsList.map((eachItem) => (
-                <MenuItem key={eachItem.id} Item={eachItem} />
-            }
-
-          </div>
+          {ItemsList.map((eachItem) => (
+            <MenuItem key={eachItem.id} Item={eachItem} />
+          ))}
         </div>
       </div>
-    </>
-  );
-};
+    </div>
+  </>
+);
 
 export default ItemsMenu;
