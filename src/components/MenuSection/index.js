@@ -35,7 +35,7 @@ const ItemsMenu = () => {
             <div className="col-12">
               <h1 className="menu-section-heading">Explore Menu</h1>
             </div>
-            {isLoading ? (
+            {/*{isLoading ? (
               <ThreeDots
                 height="80"
                 width="80"
@@ -50,7 +50,12 @@ const ItemsMenu = () => {
               ItemsList.map((eachItem) => (
                 <MenuItem key={eachItem.id} Item={eachItem} />
               ))
-            )}
+              )} */}
+            {
+              ItemsList.map((eachItem) => (
+                <MenuItem key={eachItem.id} Item={eachItem} />
+            }
+
           </div>
         </div>
       </div>
