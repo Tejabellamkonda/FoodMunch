@@ -1,0 +1,39 @@
+.menu-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.menuContainer {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.menu-heading {
+  color: lightblue;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .menuContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.explore-menu-section {
+  background-color: white;
+  margin-top: 70px;
+}
