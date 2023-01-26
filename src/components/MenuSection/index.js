@@ -6,6 +6,8 @@ import ItemsList from "../data";
 import "./index.css";
 
 const ItemsMenu = () => {
+  {
+    /*
   const [isLoading, setIsLoading] = useState(true);
   const [MenuList, setMenuList] = useState([]);
 
@@ -20,6 +22,8 @@ const ItemsMenu = () => {
   useEffect(() => {
     getMenuList();
   }, []);
+*/
+  }
 
   return (
     <>
